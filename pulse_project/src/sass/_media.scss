@@ -1,0 +1,205 @@
+@media ( max-width: 991px) {
+    .carousel {
+        .slick-dots {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            li {
+                margin: 0 5px;
+                button {
+                    background-color: #E6E6FA;
+                    border-radius: 100%;
+                    border: none;
+                    text-indent: 250%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+                    
+            }
+            .slick-active {
+                border: 1px #808080 solid;
+                border-radius: 100%;
+            }    
+        }   
+        &__inner {
+            width: 95%;
+        }      
+    }
+   
+    .header {
+        justify-content: space-around;
+    }
+
+    .promo {
+        &__header {
+            font-size: 30px;
+        }
+        &__wrapper {
+            align-items: center;
+        }
+    }
+    .consultation {
+        padding: 75px 50px;
+    }
+    .reviews {
+        &__item {
+            justify-content: center;
+        }
+        &__text {
+            margin-left: 40px;
+            &_descr {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media ( max-width: 767px) {
+    .header {
+        flex-wrap: wrap;
+    }
+    .advantages {
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 25px;
+        }
+        &__items {
+            max-width: 300px;
+        }
+        &__subtitle {
+            margin-top: 20px;
+        }
+        &__descr {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+    }
+    .consultation {
+        .title_left {
+            font-size: 25px;
+            text-align: center;
+        }
+        &__descr {
+            text-align: center;
+        }
+        .feed-form {
+            margin-left: 50px;
+            input{
+                margin: 15 auto;
+            }     
+            &_form_text {
+                text-align: center;
+            }   
+            .button_submit {
+                display: block;
+                margin: 15 auto;
+                margin-top: 25px;
+            }
+        }
+    }
+    .reviews {
+        &__item {
+            justify-content: center;
+        }
+        &__text {
+            margin-left: 20px;
+            &_descr {
+                width: 100%;
+            }
+        }
+    }
+}
+@media ( max-width: 575px) {
+    .header {
+        &__logo {
+            margin: 0 auto;
+        }
+        img {
+            display: block;
+            width: 85%;
+            margin: 0 auto;
+        }
+        &__official {
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 20px;
+        }            
+    }
+
+    .advantages {
+        h2 {
+            font-size: 22px;
+        }
+    }
+    .promo {
+        &__header {
+            font-size: 22px;
+            text-align: center;
+        }
+        &__subheader {
+            font-size: 12px;
+        }
+        &__wrapper {
+            align-items: center;
+        }
+        &__icons {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__icon {
+            margin-bottom: 15px;
+        }
+        .button_main {
+            width: 80%;
+            font-size: 14px;
+        }
+    }
+    .catalog {
+        h2 {
+            font-size: 22px;
+        }
+        .catalog__content_active{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .wrapper {
+            &-title {
+                margin-bottom: 39px;
+                font-size: 16px;
+            }
+            &_list {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                cursor: none;
+                li {
+                    width: 200px;
+                    height: 50px;
+                    margin: 15px 0;
+                }
+    
+            }
+    
+        }
+
+    }
+    .reviews {
+        h2 {
+            font-size: 22px;
+        }
+        &__item {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__text {
+            margin-top: 20px;
+            margin-left: 0;
+            text-align: center;
+            &_descr {
+                max-width: 100%;
+            }
+        }
+    }
+}
