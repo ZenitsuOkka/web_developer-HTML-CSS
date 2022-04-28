@@ -74,6 +74,27 @@ $(document).ready(function(){
 
     $('#order form').validate(); 
 
+    function validateForms(form) {
+        $(form ).validate({
+            rules: {
+                name: "required",
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: "Пожалуйста введите ваше имя",
+                phone: "Пожалйства введите телефон",
+                email: {
+                    required: "Пожалуйста введите свой емейл",
+                    email: "Непрвильно введен адрес почт"
+                }
+            }
+        });
+    }
+
 
 
 });
