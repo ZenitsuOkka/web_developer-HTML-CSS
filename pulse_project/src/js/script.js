@@ -60,6 +60,14 @@ $(document).ready(function(){
             email: {
                 required: true,
                 email: true
+            },
+            messages: {
+                name: "Пожалуйста введите ваше имя",
+                phone: "Пожалйства введите телефон",
+                email: {
+                  required: "Пожалуйста введите свой емейл",
+                  email: "Непрвильно введен адрес почты"
+                }
             }
         }
     });
