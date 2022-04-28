@@ -487,16 +487,29 @@
     </footer>
 
     <div class="overlay">
-        <div class="modal">
+        <div class="modal" id="consultation">
             <div class="modal__close">&times;</div>
             <div class="modal__subtitle">Просто заполните форму заявки</div> 
             <div class="modal__descr">И мы перезвоним вам в течении 10 минут</div>
-            <form class="feed-form" action="#">
+            <form class="feed-form feed-form_mt25" action="#">
                 <input name="name" placeholder="Ваше имя" type="text">
                 <input name="phone" placeholder="Ваш телефон" type="number">
                 <input name="email" placeholder="Ваш емейл" type="email">
 
                 <button class="button button_submit">заказать консультацию</button>
+            </form>
+        </div>
+
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Ваш заказ</div> 
+            <div class="modal__descr">Пульсометр Polar RT1</div>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваш телефон" type="number">
+                <input name="email" placeholder="Ваш емейл" type="email">
+
+                <button class="button button_submit">купить</button>
             </form>
         </div>
     </div>
