@@ -51,4 +51,11 @@ $(document).ready(function(){
             $('.overlay, #order').fadeIn('slow');
         })
     });
+
+    $('#consultation-form').validate(); 
+    $('#consultation form').validate(); 
+    $('#order form').validate(); 
+
+
+
 });
