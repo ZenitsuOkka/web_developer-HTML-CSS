@@ -52,28 +52,6 @@ $(document).ready(function(){
         })
     });
 
-    $('#consultation-form').validate(); 
-    $('#consultation form').validate({
-        rules: {
-            name: "required",
-            phone: "required",
-            email: {
-                required: true,
-                email: true
-            }
-        },
-        messages: {
-            name: "Пожалуйста введите ваше имя",
-            phone: "Пожалйства введите телефон",
-            email: {
-                required: "Пожалуйста введите свой емейл",
-                email: "Непрвильно введен адрес почт"
-            }
-        }
-    });
-
-    $('#order form').validate(); 
-
     function validateForms(form) {
         $(form ).validate({
             rules: {
@@ -93,7 +71,12 @@ $(document).ready(function(){
                 }
             }
         });
-    }
+    };
+
+    validateForms('#consultation-form');
+    validateForms('#consultation form');
+    validateForms('#order form');
+
 
 
 
