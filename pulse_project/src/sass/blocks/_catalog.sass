@@ -1,0 +1,126 @@
+.catalog
+    margin-top: 108px
+    display: flex
+    justify-content: space-between
+    .wrapper
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+    &-title
+        color: #0d0d0d
+        font-size: 30px
+        font-weight: 70000
+        text-transform: uppercase
+        margin-bottom: 69px
+        text-align: center
+    &_list
+        list-style-type: none
+        display: flex
+        justify-content: center
+        cursor: pointer
+        li
+            width: 220px
+            height: 50px
+            margin: 0 5px
+            background-color: #ffffff
+            border: 2px solid #d0d0d0
+            text-align: center
+            text-transform: uppercase
+            transform: skewX(-25deg)
+            transition: .3s
+            &:hover
+                box-shadow: 3px 3px  20px $color
+                border: none
+            div
+                margin-top: 10px
+                transform: skewX(25deg)
+        .active
+            background-color: $color
+            color: #ffffff
+            border: none
+    &__content
+        width: 300px
+        min-height: 440px
+        border: 2px solid #e8e8e8
+        background-color: #ffffff
+        text-align: center
+        padding: 20px 20px 26px 20px 
+        margin: 10px 10px
+        overflow: hidden
+        hr
+            margin-top: 19px
+            height: 1px
+            background-color: #e8e8e8
+            border-bottom: none
+            border-top: none
+        &_wrap
+            display: flex
+            width: 202%
+        &_first
+            width: 50%
+            transform: translateX(-101%)
+            transition: .3s
+            &_active
+                transform: translateX(0%)
+            &_title
+                margin-top: 20px
+                color: #0d0d0d
+                font-size: 16px
+                font-weight: 700
+            &_descr
+                margin-top: 16px
+                color: #0d0d0d
+                font-size: 14px
+                font-weight: 300
+            &_more
+                margin-top: 17px
+                color: #c70101
+                font-size: 14px
+                font-weight: 500
+                text-decoration: underline
+        &_second
+            width: 50%
+            transform: translateX(0%)
+            transition: .3s
+            &_active
+                transform: translateX(-100%)
+            &_list
+                list-style-type: none
+                text-align: left
+                li
+                    position: relative
+                    color: #555555
+                    font-size: 14px
+                    font-weight: 300
+                    margin-bottom: 20px
+                    &:before
+                        content: ''
+                        position: absolute
+                        width: 5px
+                        height: 5px
+                        background-color: $color
+                        left: -14px
+                        top: 7px 
+            &_back
+                color: $color
+                font-size: 14px
+                font-weight: 500
+                text-decoration: underline
+                margin-bottom: 19px
+            
+        &_prices
+            margin-top: 21px
+            display: flex
+            justify-content: space-between
+            &-old-price
+                color: #555555
+                font-size: 14px
+                font-weight: 300
+                text-decoration: line-through
+            &-price
+                color: #050505
+                font-size: 20px
+                font-weight: 700
+
+
+    
