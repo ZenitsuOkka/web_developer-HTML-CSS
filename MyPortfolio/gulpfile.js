@@ -1,11 +1,15 @@
-const gulp        = require('gulp');
-const browserSync = require('browser-sync');
-const sass        = require('gulp-sass');
-const cleanCSS = require('gulp-clean-css');
-const autoprefixer = require('gulp-autoprefixer');
-const rename = require("gulp-rename");
-const imagemin = require('gulp-imagemin');
-const htmlmin = require('gulp-htmlmin');
+import gulp from 'gulp';
+import browserSync from 'browser-sync';
+import cleanCSS from 'gulp-clean-css';
+import autoprefixer from 'gulp-autoprefixer';
+import rename from "gulp-rename";
+import imagemin from 'gulp-imagemin';
+import htmlmin from 'gulp-htmlmin';
+import dartSass from 'sass'
+import gulpSass from 'gulp-sass'
+const sass = gulpSass(dartSass)
+
+
 
 gulp.task('server', function() {
 
