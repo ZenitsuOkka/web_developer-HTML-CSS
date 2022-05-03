@@ -46,5 +46,31 @@
         right: 25px;
         cursor: pointer;
     }
+    &__list {
+        list-style-type: none;
+        padding-left: 35px;
+    }
+    &__link {
+        position: relative;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        &:before {
+            content: '';
+            position: absolute;
+            left: -35px;
+            top: 10px;
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            border: 1px solid #000000;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
 
 }
