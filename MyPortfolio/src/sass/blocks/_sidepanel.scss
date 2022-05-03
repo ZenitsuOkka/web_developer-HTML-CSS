@@ -7,4 +7,10 @@
     justify-content: space-between;
     height: 340px;
     z-index: 3;
+    align-items: center;
+    &__divider {
+        width: 2px;
+        height: 70px;
+        background-color: #000;
+    }
 }
