@@ -1,10 +1,12 @@
 .resume {
     padding-top: 120px;
     &__title {
+        position: relative;
         text-align: center;
+        @include before_circle;
     }
     &__subtitle {
         text-align: center;
-        
+
     }
 }
