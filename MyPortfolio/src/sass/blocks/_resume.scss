@@ -53,6 +53,15 @@
 
     }
     &__item {
+        position: relative;
+        &:before {
+            content: '';
+            height: 1px;
+            width: 45px;
+            position: absolute;
+            background-color:#000;
+            top: 68px;
+        }
         &-head {
             position: relative;
             padding: 45px 0 0 100px;
