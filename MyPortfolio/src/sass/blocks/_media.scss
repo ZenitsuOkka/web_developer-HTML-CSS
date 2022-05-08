@@ -1,4 +1,4 @@
-@media (max-width: 14390px)  {
+@media (max-width: 1439px)  {
     .sidepanel {
         display: none;
     }
@@ -11,11 +11,61 @@
     .sidepanel {
         display: none;
     }
+    .about {
+        &__wrapper {
+            grid-template-columns: 400px 520px;
+            gap: 40px;
+        }
+        &__skills {
+            grid-template: repeat(2, minmax(120px, auto)) / repeat(2, 250px);
+            column-gap: 20px;
+            &-item {
+                grid-template-columns: 40px 195px;
+                column-gap: 15px;
+            }
+        }
+    }
+    .resume {
+        &__wrapper {
+            padding: 40px 20px 0 20px;
+            column-gap: 80px;
+        }
+    }
+    .skills {
+        &__items {
+            grid-template-columns: repeat(auto-fit, 270px);
+            justify-content: space-between;
+        }
+        &__ratings {
+            grid-template-columns: repeat(auto-fit, 350px);
+            grid-auto-rows: minmax(70px, auto);
+            justify-content: space-between;
+            padding: 0 30px;
+        }
+    }
 }
 
 @media (max-width: 992px)  {
     .container {
         max-width: 720px;
+    }
+    .title {
+        &_fz36 {
+            font-size: 30px;
+        }
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: 300px 380px;
+            gap: 40px;
+        }
+        &__skills {
+            grid-template: repeat(2,minmax(80px,auto))/ 380px;
+            &-item {
+                grid-template-columns: 40px 320px;
+                column-gap: 20px;
+            }
+        }
     }
 }
 
@@ -37,6 +87,24 @@
             margin-top: 30px;
         }
     }
+    .about {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template: 400px auto auto / 100%;
+        }
+        &__photo {
+            grid-row: unset;
+        }
+        &__skills {
+            grid-template-columns: repeat(2, 260px);
+            gap: 30px;
+
+            &-item {
+                grid-template-columns: 40px 195px;
+                column-gap: 15px;
+            }
+        }
+    }
 
 }
 
@@ -48,6 +116,9 @@
     .title {
         &_fz48 {
            font-size: 28px;
+        }
+        &_fz36 {
+            font-size: 24px;
         }
    }
    .hamburger {
@@ -62,6 +133,20 @@
        &__btns {
            margin-top: 20px;
        }
+   }
+   .about {
+        padding-top: 20px;
+        &__wrapper {
+            grid-template: 340px auto auto / 100%;
+            gap: 30px;
+        }
+        &__skills {
+            padding: auto;
+            grid-template-columns: 1fr;
+            &-item {
+                grid-template-columns: 40px 250px;
+            }
+        }
    }
    .menu {
        &__block {
